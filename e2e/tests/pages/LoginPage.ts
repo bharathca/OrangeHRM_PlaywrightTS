@@ -14,7 +14,7 @@ export class LoginPage {
     async visit() {
         await this.page.goto("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login");
     }
-    getDashboardText() {
+    get getDashboardText() {
         return this.page.getByRole("heading", { name: 'Dashboard' });
     }
 }  
