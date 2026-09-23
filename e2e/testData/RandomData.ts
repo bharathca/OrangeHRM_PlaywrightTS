@@ -1,5 +1,5 @@
 import { EmployeeDetailsInterface } from "./EmployeeDetailsInterface";
-import { fa, faker } from '@faker-js/faker'
+import { faker } from '@faker-js/faker'
 
 export function getRandomEmployeeDetails(): EmployeeDetailsInterface {
     return {

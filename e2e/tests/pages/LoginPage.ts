@@ -4,12 +4,13 @@ import { Env } from './frameworkConfigurations/Env';
 
 export class LoginPage {
     page: Page;
+
     constructor(page: Page) {
         this.page = page;
     }
 
     async performLogin() {
-        await this.page.getByRole("textbox", { name: 'Username' }).fill(Env.USER);
+        await this.page.getByRole("textbox", { name: 'Username' }).fill(Env.USERNAME);
         await this.page.getByRole("textbox", { name: 'Password' }).fill(Env.PASSWORD);
         await this.page.getByRole("button", { name: 'Login' }).click();
     }

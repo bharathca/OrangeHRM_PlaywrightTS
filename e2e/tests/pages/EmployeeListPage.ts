@@ -1,4 +1,5 @@
 import { Locator, Page } from '@playwright/test'
+
 export class EmployeeListPage {
     page: Page;
     firstNameInputField: Locator;
